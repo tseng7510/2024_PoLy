@@ -1,0 +1,491 @@
+.application .mainBox::before {
+  height: 1400px;
+  top: auto;
+  bottom: 0;
+}
+.application .mainBox::after {
+  height: auto;
+  bottom: 0;
+}
+.application .mainBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+@media screen and (min-width: 1001px) {
+  .application .mainBox .listBox {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1001px) {
+  .application .mainBox .listBox .item:nth-child(even) .pic {
+    order: 2;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item {
+    width: calc((100% - 50px * (2 - 1)) / 2);
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .mainBox .listBox .item {
+    width: 100%;
+  }
+}
+.application .mainBox .listBox .item:hover .more::before {
+  width: 100%;
+  left: 0;
+}
+.application .mainBox .listBox .item a {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  height: 100%;
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item a {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.application .mainBox .listBox .item .pic {
+  width: 40%;
+  max-width: 620px;
+}
+@media screen and (max-width: 1440px) {
+  .application .mainBox .listBox .item .pic {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item .pic {
+    width: 100%;
+  }
+}
+.application .mainBox .listBox .item .infoBox {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .application .mainBox .listBox .item .infoBox {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item .infoBox {
+    width: 100%;
+  }
+}
+.application .mainBox .listBox .item .infoBox .title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+}
+@media screen and (max-width: 1440px) {
+  .application .mainBox .listBox .item .infoBox .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item .infoBox .title {
+    font-size: 2.375rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .application .mainBox .listBox .item .infoBox .title {
+    font-size: 1.75rem;
+  }
+}
+.application .mainBox .listBox .item .infoBox .description {
+  color: #1F1F1F;
+  font-size: 1.3125rem;
+}
+@media screen and (max-width: 1440px) {
+  .application .mainBox .listBox .item .infoBox .description {
+    font-size: 1.1875rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item .infoBox .description {
+    font-size: 1.125rem;
+  }
+}
+.application .mainBox .listBox .item .more {
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-shrink: 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  color: #FFF;
+  white-space: nowrap;
+  background: #F96D11;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  margin: 0 0 0 auto;
+}
+@media screen and (max-width: 1000px) {
+  .application .mainBox .listBox .item .more {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    margin: auto 0 0;
+  }
+}
+.application .mainBox .listBox .item .more::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background: #000;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+
+.applicationDetail .siteMain {
+  background: #beb9af;
+}
+.applicationDetail .siteMain .mainBox::after {
+  height: auto;
+  bottom: 0;
+}
+.applicationDetail .siteMain .contentBox {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.applicationDetail .siteMain .topBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox {
+    flex-direction: column;
+  }
+}
+.applicationDetail .siteMain .topBox .pic {
+  width: 53%;
+  max-width: 800px;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox .pic {
+    width: 100%;
+  }
+}
+.applicationDetail .siteMain .topBox .infoBox {
+  width: 47%;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox .infoBox {
+    width: 100%;
+  }
+}
+.applicationDetail .siteMain .topBox .title {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1440px) {
+  .applicationDetail .siteMain .topBox .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .applicationDetail .siteMain .topBox .title {
+    font-size: 2.375rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox .title {
+    font-size: 1.75rem;
+  }
+}
+.applicationDetail .siteMain .topBox .topTitle {
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFF;
+  font-size: 1.3125rem;
+  font-weight: 500;
+  background: #F96D11;
+  padding: 5px 20px 3px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox .topTitle {
+    font-size: 1.125rem;
+  }
+}
+.applicationDetail .siteMain .topBox .description {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 1440px) {
+  .applicationDetail .siteMain .topBox .description {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .applicationDetail .siteMain .topBox .description {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .topBox .description {
+    font-size: 1.125rem;
+  }
+}
+.applicationDetail .siteMain .topBox .changePage {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows {
+  flex-shrink: 0;
+  padding: 15px 20px;
+  border-radius: 5px;
+  font-size: 1.125rem;
+  line-height: 1;
+  font-weight: 600;
+  text-align: left;
+  white-space: nowrap;
+  border: #BEB9AF 1px solid;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  background: #F96D11;
+  z-index: -1;
+  transition: all 0.3s ease;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_ar.svg") center no-repeat;
+          mask: url("../images/icon/icon_ar.svg") center no-repeat;
+  background: #000;
+  transform: scaleX(-1);
+  transition: all 0.3s ease;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows span {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows.prev::after {
+  order: -1;
+  transform: scaleX(1);
+}
+.applicationDetail .siteMain .topBox .changePage .arrows:hover {
+  color: #fff;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows:hover::after {
+  background: #fff;
+}
+.applicationDetail .siteMain .topBox .changePage .arrows:hover::before {
+  width: 100%;
+  left: 0;
+}
+.applicationDetail .siteMain .centerBox {
+  background: rgba(255, 255, 255, 0.8);
+  padding: clamp(30px, 6%, 100px);
+}
+.applicationDetail .siteMain .centerBox .editor {
+  color: #1F1F1F;
+}
+.applicationDetail .siteMain .centerBox .editor .list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.applicationDetail .siteMain .centerBox .editor .list li {
+  padding-left: 23px;
+  position: relative;
+}
+.applicationDetail .siteMain .centerBox .editor .list li::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #F96D11;
+  position: absolute;
+  left: 0;
+  top: 11px;
+  display: block;
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .centerBox .editor .list li::before {
+    top: 8px;
+  }
+}
+.applicationDetail .siteMain .bottomBox .subTitle {
+  text-align: center;
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+@media screen and (max-width: 1000px) {
+  .applicationDetail .siteMain .bottomBox .subTitle {
+    font-size: 2.375rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .applicationDetail .siteMain .bottomBox .subTitle {
+    font-size: 1.75rem;
+  }
+}
+.applicationDetail .siteMain .bottomBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px 40px;
+  margin: 0 -25px 40px;
+}
+@media screen and (max-width: 1000px) {
+  .applicationDetail .siteMain .bottomBox .listBox {
+    gap: 30px 20px;
+  }
+}
+.applicationDetail .siteMain .bottomBox .listBox .item a {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 0 25px;
+}
+.applicationDetail .siteMain .bottomBox .listBox .item a:hover .infoBox {
+  transform: translateY(0);
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .picBox {
+  position: relative;
+  overflow: hidden;
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .pic {
+  background: #fff;
+  overflow: hidden;
+  padding: 20px;
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .pic img {
+  aspect-ratio: 360/385;
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .title {
+  color: #000;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1000px) {
+  .applicationDetail .siteMain .bottomBox .listBox .item .title {
+    font-size: 1.25rem;
+  }
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .infoBox {
+  position: absolute;
+  inset: 0;
+  padding: 50px;
+  background: #F96D11;
+  transform: translateY(105%);
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1300px) {
+  .applicationDetail .siteMain .bottomBox .listBox .item .infoBox {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .applicationDetail .siteMain .bottomBox .listBox .item .infoBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px;
+  }
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .infoBox .more {
+  width: 98px;
+  aspect-ratio: 1;
+  border: 3px solid rgba(255, 255, 255, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  margin: 10% auto 20px;
+}
+@media screen and (max-width: 1300px) {
+  .applicationDetail .siteMain .bottomBox .listBox .item .infoBox .more {
+    width: 70px;
+    font-size: 1.25rem;
+    margin: 0 auto 20px;
+  }
+}
+.applicationDetail .siteMain .bottomBox .listBox .item .infoBox .description {
+  color: #FFF;
+  line-height: 1.8;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox button {
+  width: 44px;
+  height: 44px;
+  color: transparent;
+  border: #696869 1px solid;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox button::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: block;
+  -webkit-mask: url("../images/icon/icon_ar.svg") center no-repeat;
+          mask: url("../images/icon/icon_ar.svg") center no-repeat;
+  background: #000;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scaleX(-1);
+  transition: all 0.3s ease;
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox button.slick-prev::after {
+  transform: translate(-50%, -50%) scaleX(1);
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox button:hover {
+  border-color: #F96D11;
+  background: #F96D11;
+}
+.applicationDetail .siteMain .bottomBox .arrowsBox button:hover::after {
+  background: #fff;
+}/*# sourceMappingURL=application.css.map */

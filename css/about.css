@@ -1,0 +1,357 @@
+.aboutPage .mainBox {
+  padding-bottom: 0;
+}
+.aboutPage .mainBox section {
+  padding-top: 0;
+}
+.aboutPage .block .title {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block .title {
+    font-size: 2rem;
+  }
+}
+.aboutPage .block .subTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  z-index: 9;
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 1440px) {
+  .aboutPage .block .subTitle {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block .subTitle {
+    font-size: 1.5rem;
+  }
+}
+.aboutPage .block .editor {
+  font-size: 1.125rem;
+}
+.aboutPage .block1 {
+  background: #f96d11;
+  padding-top: 3%;
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block1 {
+    padding: 6% 5%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block1 {
+    padding: 40px 30px;
+  }
+}
+.aboutPage .block1 .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 100px;
+}
+@media screen and (max-width: 1440px) {
+  .aboutPage .block1 .content {
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block1 .content {
+    flex-direction: column;
+  }
+}
+.aboutPage .block1 .content > div:nth-child(1) {
+  padding: 0 0 3%;
+  width: 50%;
+  flex-shrink: 0;
+}
+.aboutPage .block1 .content > div:nth-child(3) {
+  width: 7%;
+  align-self: flex-end;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block1 .content > div:nth-child(3) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block1 .content > div {
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}
+.aboutPage .block1 .content .infoBox {
+  width: 43%;
+  padding: 0 0 3%;
+}
+.aboutPage .block1 .content .infoBox .title {
+  color: #fff;
+}
+@media screen and (max-width: 1440px) {
+  .aboutPage .block1 .content .infoBox .title {
+    font-size: 2.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block1 .content .infoBox .title {
+    font-size: 2rem;
+  }
+}
+.aboutPage .block1 .content .infoBox .title span {
+  white-space: nowrap;
+}
+.aboutPage .block1 .content .infoBox .editor {
+  color: #fff;
+  font-size: 1.125rem;
+  line-height: 1.8;
+}
+@media screen and (max-width: 1440px) {
+  .aboutPage .block1 .content .infoBox .editor {
+    font-size: 1.125rem;
+    line-height: 1.5;
+  }
+}
+.aboutPage .block2 {
+  padding: 5% 30px;
+}
+.aboutPage .block2 .content {
+  max-width: 1740px;
+  margin: 0 auto;
+}
+.aboutPage .block2 .content .title {
+  text-align: center;
+  color: #f96d11;
+}
+.aboutPage .block2 .content .subTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block2 .content .subTitle {
+    margin-bottom: 30px;
+  }
+}
+.aboutPage .block2 .content .picBox {
+  overflow: hidden;
+  position: relative;
+}
+.aboutPage .block2 .content .picBox .videoContainer {
+  overflow: hidden;
+  line-height: 0;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: scale(1.01) translateY(-50%);
+  padding-top: 40%;
+}
+.aboutPage .block2 .content .picBox .videoContainer iframe,
+.aboutPage .block2 .content .picBox .videoContainer object,
+.aboutPage .block2 .content .picBox .videoContainer embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.aboutPage .block2 .content .picBox::before {
+  content: '';
+  position: absolute;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  width: 26px;
+  height: 60px;
+  background: #f96d11;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -30px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block2 .content .picBox::before {
+    width: 13px;
+    height: 30px;
+    top: -15px;
+  }
+}
+.aboutPage .block2 .content .picBox::after {
+  content: '';
+  padding-top: 41%;
+  display: block;
+  width: 100%;
+}
+.aboutPage .block3 {
+  background: url('../images/in/a4.jpg') center left no-repeat;
+  background-size: cover;
+  padding: 3% 30px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block3 {
+    padding: 40px 0;
+  }
+}
+.aboutPage .block3 .content {
+  max-width: 620px;
+}
+.aboutPage .block3 .content .title {
+  color: #f96d11;
+}
+.aboutPage .block3 .content .subTitle {
+  color: #fff;
+}
+.aboutPage .block3 .content .editor {
+  color: #f0f0f0;
+  position: relative;
+  isolation: isolate;
+  padding-top: 40px;
+}
+.aboutPage .block3 .content .editor::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: 8px;
+  background: linear-gradient(to bottom, #f96d11 0px, #f96d11 3px, transparent 3px, transparent 4px, #f96d11 4px, #f96d11 6px, transparent 6px, transparent 7px, #f96d11 7px, #f96d11 8px);
+  z-index: -1;
+}
+.aboutPage .block4 {
+  position: relative;
+  padding: 5% 0;
+  isolation: isolate;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 {
+    padding: 40px 0;
+  }
+}
+.aboutPage .block4::before {
+  content: '';
+  position: absolute;
+  width: 70%;
+  background: #fff1d9;
+  height: 50%;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: -1;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4::before {
+    width: 90%;
+    height: 20%;
+  }
+}
+.aboutPage .block4 .container {
+  text-align: right;
+}
+.aboutPage .block4 .container .title {
+  color: #f96d11;
+  margin-bottom: 0;
+}
+.aboutPage .block4 .container .subTitle {
+  margin-bottom: 40px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 .container .subTitle {
+    margin-bottom: 30px;
+  }
+}
+.aboutPage .block4 .listBox {
+  max-width: 2010px;
+  margin: 0 0 0 auto;
+  padding-left: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  gap: 15px;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 .listBox {
+    gap: 40px;
+  }
+}
+@media screen and (max-width: 1920px) {
+  .aboutPage .block4 .listBox {
+    max-width: 1720px;
+  }
+}
+.aboutPage .block4 .listBox::after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 90%;
+  height: 80%;
+  width: 100%;
+  background: #f96d11;
+  top: 50%;
+  z-index: 2;
+  mix-blend-mode: multiply;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 .listBox::after {
+    height: 20%;
+    right: 85%;
+    top: auto;
+    bottom: -40px;
+  }
+}
+.aboutPage .block4 .listBox .item {
+  width: calc((100% - 15px * (3 - 1)) / 3);
+  text-align: center;
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 .listBox .item {
+    padding-right: 30px;
+    width: 100%;
+  }
+}
+.aboutPage .block4 .listBox .title {
+  position: relative;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .aboutPage .block4 .listBox .title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .aboutPage .block4 .listBox .title {
+    font-size: 1.25rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .aboutPage .block4 .listBox .title {
+    font-size: 1.125rem;
+  }
+}
+.aboutPage .block4 .listBox .title::before {
+  position: relative;
+  content: '';
+  position: absolute;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  width: 14px;
+  height: 30px;
+  background: #f96d11;
+  display: block;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -15px;
+}
+.aboutPage .block4 .listBox .info {
+  font-size: 1.125rem;
+  line-height: 1.2;
+} /*# sourceMappingURL=about.css.map */

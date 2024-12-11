@@ -1,0 +1,209 @@
+.worldwideList .mainBox {
+  background: url('../images/in/wbg.png') top center repeat-x;
+}
+.worldwideList .topBox {
+  max-width: 1720px;
+  margin: 0 0 0 auto;
+  padding: 0 0 50px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+@media screen and (max-width: 767px) {
+  .worldwideList .topBox {
+    padding: 0 30px 40px;
+    flex-direction: column;
+  }
+}
+.worldwideList .topBox .infoBox {
+  width: 36%;
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+@media screen and (max-width: 767px) {
+  .worldwideList .topBox .infoBox {
+    width: 100%;
+    max-width: none;
+  }
+}
+.worldwideList .topBox .title {
+  font-size: 3.375rem;
+  margin-bottom: 0;
+  line-height: 1;
+}
+@media screen and (max-width: 1440px) {
+  .worldwideList .topBox .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .worldwideList .topBox .title {
+    font-size: 1.875rem;
+  }
+}
+.worldwideList .topBox .description {
+  color: #222222;
+  font-size: 1.3125rem;
+}
+.worldwideList .topBox .pic {
+  width: 64%;
+}
+@media screen and (max-width: 767px) {
+  .worldwideList .topBox .pic {
+    width: 100%;
+  }
+}
+.worldwideList .topBox .more {
+  background: #f96d11;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.worldwideList .bottomBox {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.worldwideList .bottomBox .item {
+  width: calc((100% - 0px * (4 - 1)) / 4);
+  padding: 3% 5%;
+}
+@media screen and (max-width: 1000px) {
+  .worldwideList .bottomBox .item {
+    width: calc((100% - 0px * (2 - 1)) / 2);
+    padding: 40px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .worldwideList .bottomBox .item {
+    padding: 20px;
+    width: 100%;
+  }
+}
+.worldwideList .bottomBox .item:nth-child(1) {
+  background: #fff;
+}
+.worldwideList .bottomBox .item:nth-child(2) {
+  background: #f1f1f1;
+}
+.worldwideList .bottomBox .item:nth-child(2) > a {
+  justify-content: center;
+  margin: 20px -20% 0;
+  background: #f96d11;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+@media screen and (max-width: 1000px) {
+  .worldwideList .bottomBox .item:nth-child(2) > a {
+    margin: 20px 0px 0;
+  }
+}
+.worldwideList .bottomBox .item:nth-child(3) {
+  background: #e5e5e5;
+}
+.worldwideList .bottomBox .item:nth-child(4) {
+  background: #d1d1d1;
+}
+.worldwideList .bottomBox .item .title {
+  font-weight: 600;
+  color: #000;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 1440px) {
+  .worldwideList .bottomBox .item .title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .worldwideList .bottomBox .item .title {
+    font-size: 1.25rem;
+  }
+}
+.worldwideList .bottomBox .item ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.worldwideList .bottomBox .item li {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+}
+.worldwideList .bottomBox .item li img {
+  min-width: 36px;
+  width: 36px;
+  height: 24px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  margin-right: 10px;
+}
+.worldwideList .bottomBox .item a {
+  display: flex;
+  align-items: center;
+  color: #f96d11;
+  text-decoration: underline;
+}
+
+.companyBox .listBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.companyBox .listBox .item {
+  flex-grow: 1;
+  width: calc((100% - 20px * (2 - 1)) / 2);
+}
+@media screen and (max-width: 1000px) {
+  .companyBox .listBox .item {
+    width: 100%;
+  }
+}
+.companyBox .listBox .pic {
+  width: auto;
+  margin-bottom: 20px;
+}
+.companyBox .listBox .pic img {
+  width: auto !important;
+  height: 80px;
+}
+.companyBox .listBox .title {
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #000;
+  font-size: 1.75rem;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+@media screen and (max-width: 1440px) {
+  .companyBox .listBox .title {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .companyBox .listBox .title {
+    font-size: 1.25rem;
+  }
+}
+.companyBox .listBox .description {
+  color: #525252;
+  font-size: 1.125rem;
+}
+.companyBox .listBox .description a {
+  color: #f96d11;
+  text-decoration: underline;
+}
+
+.companyBox .listBox .picBox {
+  max-width: 1200px;
+  display: flex;
+  gap: 20px;
+}
