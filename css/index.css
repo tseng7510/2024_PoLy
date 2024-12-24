@@ -415,7 +415,14 @@ section .blockTitle {
   left: 0;
 }
 .newsBox .listBox .picBox {
+  width: 40%;
+  flex-shrink: 0;
   position: relative;
+}
+@media screen and (max-width: 575px) {
+  .newsBox .listBox .picBox {
+    width: 100%;
+  }
 }
 .newsBox .listBox .pic {
   overflow: hidden;

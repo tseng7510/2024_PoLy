@@ -462,7 +462,7 @@
   gap: 10px;
   font-size: 1.125rem;
   color: #fff;
-  width: calc((100% - 0px * (4 - 1)) / 4);
+  flex: 1 1 calc((100% - 0px * (4 - 1)) / 4);
   margin: 0;
   display: flex;
   transition: all 0.3s ease;
