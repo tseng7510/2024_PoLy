@@ -93,7 +93,7 @@
               <div class="content">
                 <div class="subTitle">Introduction</div>
                 <div class="editor">
-                  Discover the future of precision machining with our Sliding Head Turning solutions. These machines bring together Swiss Type CNC technology and advanced sliding head capabilities for unparalleled accuracy. Ideal for intricate parts and complex geometries, our Sliding Head Turning machines are engineered for high-speed, high-quality output. Elevate your machining process to new heights of efficiency with these cutting-edge systems.
+                  Discover the future of precision machining with our Sliding Head Turning solutions. These machines bring together Swiss Type CNC technology and advanced sliding head capabilities for unparalleled accuracy. Ideal for intricate parts and geometries, our Sliding Head Turning machines are engineered for high-speed, high-quality output. Elevate your machining process to new heights of efficiency with these cutting-edge systems.
                 </div>
               </div>
               <div class="content">

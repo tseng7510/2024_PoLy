@@ -570,6 +570,12 @@ button:focus {
     font-size: 1rem;
   }
 }
+.editor a {
+  color: #f96d11;
+}
+.editor a:hover {
+  color: red;
+}
 .editor ul:not(.list) {
   list-style: disc;
   padding-left: 20px;
